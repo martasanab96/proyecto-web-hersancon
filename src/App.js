@@ -1,26 +1,25 @@
-import logo from './images/logo.svg';
-import './assets/App.css';
-import Component from './components/Component';
+import Navbar from './components/Navbar';
+import Servicios from './pages/Servicios';
+import Productos from './pages/Productos';
+import Contacto from './pages/Contacto';
+import Inicio from './pages/Inicio';
+import {Route, Routes} from "react-router-dom"
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hola Mundo
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Component />
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <div className='container'>  
+        <Routes>
+          <Route path ="/" element={<Inicio />} />
+          <Route path ="/Inicio" element={<Inicio />} />
+          <Route path ="/Servicios" element={<Servicios />} />
+          <Route path ="/Productos" element={<Productos />} />
+          <Route path ="/Contacto" element={<Contacto />} />
+        </Routes>
+      </div>
+    </ >
   );
 }
 
