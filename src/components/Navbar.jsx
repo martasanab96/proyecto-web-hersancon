@@ -1,16 +1,17 @@
 import React from 'react'
 import '../assets/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import Logo from "../images/Logo.png"
 
 function Navbar() {
     
     return (
         <nav className="nav">
-            <Link to="/" className="site-title">
-                Hersancon
+            <Link to="/" className='logo-link'>
+                <img src={Logo} alt="logo_hersancon" className='logo'/> 
             </Link>
             <ul>
-            <CustomLink to="/Inicio">Inicio</CustomLink>
+                <CustomLink to="/Inicio">Inicio</CustomLink>
                 <CustomLink to="/Productos">Productos</CustomLink>
                 <CustomLink to="/Servicios">Servicios</CustomLink>
                 <CustomLink to="/Contacto">Contacto</CustomLink>

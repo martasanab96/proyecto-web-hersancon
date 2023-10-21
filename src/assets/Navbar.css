@@ -6,31 +6,36 @@ body {
 margin: 0;
 }
 
-.container {
-margin: 1rem;
-text-align: center;
+.logo-link {
+ width: 35%;
+}
+
+.logo {
+background-color: black;
+height: auto;
+width: 100%;
 }
 
 .nav {
-background-color: #333;
+background-color: black;
 color: white;
 display: flex;
-justify-content: space-between;
 align-items: stretch;
 gap: 2rem;
-padding: 0 1rem;
-}
-
-.site-title {
-font-size: 2rem;
+padding: 0 0rem;
+position: fixed;
+top: 0;
+width: 100%;
 }
 
 .nav ul {
-padding: 0;
+padding: 0rem;
 margin: 0;
 list-style: none;
 display: flex;
 gap: 1rem;
+font-size: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav a {

@@ -3,7 +3,7 @@ import React from 'react'
 function Contacto() {
     
     return (
-        <h1>Contacto</h1>
+        <h1>SOBRE NOSOTROS</h1>
     )
 }
 
