@@ -1,0 +1,89 @@
+/* Citas */
+
+/* Globales */
+*::after,
+*::before,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1200px;
+	font-family: 'Lato';
+	color: #333;
+}
+
+.icon-wrench{
+	width: 40px;
+	height: 40px;
+	stroke: #000;
+}
+
+.icon-wrench:hover {
+	cursor: pointer;
+}
+
+img {
+	max-width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0 40px 0;
+}
+
+.container-icon {
+	position: relative;
+}
+
+.container-citas-icon{
+	position: absolute;
+}
+
+.count-citas {
+	position: absolute;
+	top: 55%;
+	right: 0;
+
+	background-color: #060a03;
+	color: #fff;
+	width: 25px;
+	height: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+#contador-citas {
+	font-size: 12px;
+}
+
+.container-wrench-products {
+	position: relative;
+	top: 50px;
+	right: 0;
+
+	background-color: #fff;
+	width: 400px;
+	z-index: 1;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+
+
+.wrench-empty {
+	padding: 20px;
+	text-align: center;
+}
+
+
+.hidden-wrench {
+	display: none;
+}

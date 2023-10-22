@@ -1,6 +1,6 @@
 import { data } from '../data';
 import '../assets/ProductList.css';
-import { UseHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 export const ProductList = ({
 	allProducts,
@@ -27,6 +27,9 @@ export const ProductList = ({
 		setAllProducts([...allProducts, product]);
 	};
 
+	//const history = useHistory();
+	//const handleClick = () => history.push ('/product_detail'); //Redirección
+
 	return (
 		<div className='container-items'>
 			{data.map(product => (
@@ -37,9 +40,18 @@ export const ProductList = ({
 					<div className='info-product'>
 						<h2>{product.nameProduct}</h2>
 						<p className='price'>{product.price}€</p>
-						<button onClick={() => onAddProduct(product)}>
-							Añadir al carrito
-						</button>
+						
+						<div className='cart-buttons'>
+
+							<button className='btn-add-product' onClick={() => onAddProduct(product)}>
+								Añadir al carrito
+							</button>
+
+							<button className='btn-detail-product'>
+								Ir al detalle del producto
+							</button>
+						</div>
+
 					</div>
 				</div>
 			))}
