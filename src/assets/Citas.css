@@ -1,56 +1,18 @@
 /* Citas */
 
-/* Globales */
-*::after,
-*::before,
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0 auto;
-	max-width: 1200px;
-	font-family: 'Lato';
-	color: #333;
-}
-
-.icon-wrench{
-	width: 40px;
-	height: 40px;
-	stroke: #000;
-}
-
-.icon-wrench:hover {
-	cursor: pointer;
-}
-
-img {
-	max-width: 100%;
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 30px 0 40px 0;
-}
-
 .container-icon {
 	position: relative;
-}
-
-.container-citas-icon{
-	position: absolute;
+	width: 80%;
+	height: auto;
 }
 
 .count-citas {
 	position: absolute;
-	top: 55%;
+	top: 45%;
 	right: 0;
 
-	background-color: #060a03;
-	color: #fff;
+	background-color: #5bdefa;
+	color: #080606;
 	width: 25px;
 	height: 25px;
 
@@ -62,25 +24,33 @@ header {
 
 #contador-citas {
 	font-size: 12px;
+	color: #080707;
+
 }
 
 .container-wrench-products {
-	position: relative;
+	position: absolute;
 	top: 50px;
 	right: 0;
 
 	background-color: #fff;
+	color: #070606;
+	text-align: center;
 	width: 400px;
 	z-index: 1;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 	border-radius: 10px;
 }
 
+.icon-wrench{
+	width: 40px;
+	height: 40px;
+	stroke: #f5f2f2;
+}
 
+.container-citas-icon{
+	position: absolute;
 
-.wrench-empty {
-	padding: 20px;
-	text-align: center;
 }
 
 
