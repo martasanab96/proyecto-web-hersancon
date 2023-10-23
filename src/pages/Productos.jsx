@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductList from '../components/ProductList';
 import Dropdown from '../components/Dropdown';
+import RangeSliderFilter from '../components/RangeSliderFilter';
 
 
 const Productos = (
@@ -14,7 +15,18 @@ const Productos = (
 
         <>
         <h1>Productos</h1>
-        <Dropdown />
+
+        <div className="filtros">
+
+        <RangeSliderFilter 
+                props = {props}/>
+        <Dropdown 
+                props = {props}/>
+
+
+        
+
+        </div>
         <ProductList
 				props = {props}
 			/>

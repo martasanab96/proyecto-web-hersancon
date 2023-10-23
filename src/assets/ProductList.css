@@ -1,5 +1,123 @@
 
 /* Main */
+/* Styles for the slider component */
+
+
+.order_label_2 {
+	display: inline-block; 
+	left: 40%;
+	align-items: center;
+	display: flex;
+    justify-content: center;
+    margin-top: 10px;
+	padding: 0rem;
+	margin: 0;
+	padding-bottom: 5px;
+	list-style: none;
+	display: flex;
+	font-size: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.filtros {
+	display: flex;
+	justify-content: right;
+	padding-right: 0%;
+    margin-top: 0%;
+}
+
+.slider{
+	position: relative;
+	margin: 0;
+	width: 240px;
+	height: 5px;
+	background: #709fdc;
+	border-radius: 5px;
+	cursor: pointer;
+	
+  }
+
+.max-input{
+	margin-left: 20px;
+}
+
+.maxPrice{
+	margin: 0;
+	max-width: 70px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+	padding-left: 15px;
+	border: none;
+	border-radius:20px;
+	background: #274684;
+  } 
+
+  .minPrice{
+	margin: 0;
+	max-width: 60px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+	padding-left: 15px;
+	border: none;
+	border-radius:20px;
+	background: #274684;
+  } 
+
+
+.labels {
+	display: flex;
+	flex-direction: row; /* Coloca los elementos en columnas */
+
+    font-size: 18px;
+}
+
+/* Styles for the slider thumb */
+
+.slider_1 {
+	margin-top: 3%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+
+}
+
+
+.slider .thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #090058;
+    cursor: grab;
+}
+
+
+.dropdown {
+  	display: flex;
+	justify-content: right;
+	padding-right: 10%;
+    margin-top: 2%;
+
+}
+
+.order_label {
+	display: inline-block; 
+	left: 40%;
+	align-items: center;
+	display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+	padding: 0rem;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+	font-size: 100%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .container-items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -32,14 +150,12 @@
 
 .info-product {
 	padding: 15px 30px;
-	line-height: 2;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
 }
 
 .price {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 900;
 }
 
@@ -132,4 +248,15 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+.select_drop{
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: white;
+	padding: 5px;
+	padding-left: 15px;
+	border: none;
+	border-radius:20px;
+	background: #274684;
 }

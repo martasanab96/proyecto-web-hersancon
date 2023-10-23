@@ -2,14 +2,16 @@ import { data } from '../data';
 import '../assets/ProductList.css';
 
 
-export const DetalleProducto = ({
-}) => {
+function DetalleProducto ({
+}) {
 
-	<h1>Hola 
+	return(
+
+	<h1>Hola aaaa
 
 		
 	</h1>
 
-}
+)}
 
 export default DetalleProducto
