@@ -7,14 +7,18 @@
 }
 
 .col-izq {
-    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
     float: left;
     width: 45%;
     text-align: center;
 }
 
 .col-der {
-    padding: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
     float: right;
     width: 45%;
     text-align: center;
