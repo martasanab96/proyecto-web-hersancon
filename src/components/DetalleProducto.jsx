@@ -3,16 +3,12 @@ import '../assets/ProductList.css';
 
 
 export const DetalleProducto = ({
-	allProducts,
-	setAllProducts,
-	countProducts,
-	setCountProducts,
-	total,
-	setTotal,
-    product
 }) => {
 
+	<h1>Hola 
 
+		
+	</h1>
 
 }
 

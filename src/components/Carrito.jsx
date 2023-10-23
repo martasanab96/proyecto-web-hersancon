@@ -1,5 +1,9 @@
-import React, {useState} from 'react'
+//import React, {useState} from 'react'
 import '../assets/Carrito.css';
+import { useLocation } from 'react-router-dom'
+import {useState, useEffect} from 'react'
+import { useCookies } from 'react-cookie';
+
 
 export const Carrito = ({
     allProducts,
@@ -45,7 +49,7 @@ export const Carrito = ({
 						xmlns='http://www.w3.org/2000/svg'
 						fill='none'
 						viewBox='0 0 24 24'
-						strokeWidth='1.5'
+						strokeWidth='1.0'
 						stroke='currentColor'
 						className='icon-cart'
 					>
@@ -60,7 +64,7 @@ export const Carrito = ({
 					</div>
                     
 				</div>
-                <div className='cart-total2'>
+                <div className='cart-total'>
 								<span className='total-pagar'>{total.toFixed(2)}€</span>
 			    </div>
 				<div
@@ -104,7 +108,7 @@ export const Carrito = ({
 								))}
 							</div>
 
-							<div className='cart-total'>
+							<div className='cart-total2'>
 								<h3>Total:</h3>
 								<span className='total-pagar'>{total.toFixed(2)}€</span>
 							</div>

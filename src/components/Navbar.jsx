@@ -2,9 +2,23 @@ import React from 'react'
 import '../assets/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Logo from "../images/Logo.png"
+import Carrito from '../components/Carrito';
+import Citas from '../components/Citas';
 
-function Navbar() {
+const Navbar = ({
+    allProducts,
+    setAllProducts,
+    total,
+    countProducts,
+    setCountProducts,
+    setTotal,
+    allCitas,
+    setAllCitas,
+    countCitas,
+    setCountCitas,
+}) => {
     
+    console.log(allProducts)
     return (
         <nav className="nav">
             <Link to="/" className='logo-link'>
@@ -16,6 +30,24 @@ function Navbar() {
                 <CustomLink to="/Servicios">Servicios</CustomLink>
                 <CustomLink to="/Contacto">Contacto</CustomLink>
             </ul>
+            
+            <Carrito
+              allProducts={allProducts}
+              setAllProducts={setAllProducts}
+              total={total}
+              setTotal={setTotal}
+              countProducts={countProducts}
+              setCountProducts={setCountProducts}
+            />
+
+
+            
+            <Citas
+              allCitas={allCitas}
+              setAllCitas={setAllCitas}
+              countCitas={countCitas}
+              setCountCitas={setCountCitas}
+            />
         </nav>
     )
 }
@@ -23,9 +55,10 @@ function Navbar() {
 export default Navbar;
 
 
-function CustomLink({ to, children, ...props }) {
+function CustomLink({ to, children, ...props}) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
 
   return (
     <li className={isActive ? "active" : ""}>
