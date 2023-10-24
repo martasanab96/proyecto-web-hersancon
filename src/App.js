@@ -23,14 +23,6 @@ function App() {
   const [allCitas, setAllCitas] = useState([]);
   const [sortDir, setSortDir] = useState("none");
 
-
-  function findMax(PRICES) {
-    if (!PRICES) {
-      return 0;
-    }
-    console.log(PRICES)
-    return Math.max(...PRICES.price);
-  }
   const maxPrice = data.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
 
 
@@ -72,9 +64,24 @@ function App() {
             setSortDir={setSortDir}
             value={value}
             setvalue={setValue}
+
+
           />} />
           <Route path ="/Contacto" element={<Contacto />} />
-          <Route path="/detalle_producto" element={<DetalleProducto />} />
+          <Route path="/detalle_producto/:productId" element={<DetalleProducto 
+          
+            allProducts={allProducts}
+            setAllProducts={setAllProducts}
+            total={total}
+            setTotal={setTotal}
+            countProducts={countProducts}
+            setCountProducts={setCountProducts}
+            sortDir={sortDir}
+            setSortDir={setSortDir}
+            value={value}
+            setvalue={setValue}
+
+          />} />
         </Routes>
       </div>
 	

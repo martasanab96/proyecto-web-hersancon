@@ -8,8 +8,7 @@ const Productos = (
     props
 ) => {
     
-    console.log("productos")
-    console.log(props)
+    
 
     return (
 

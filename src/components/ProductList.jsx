@@ -19,18 +19,16 @@ export const ProductList = ({
 
 	const sortState = props.sortDir;
 	const price = props.value; 
+	const allProducts = props.allProducts;
+	const setAllProducts = props.setAllProducts;
+	const total = props.total;
+	const setTotal = props.setTotal;
+	const countProducts = props.countProducts;
+	const setCountProducts = props.setCountProducts;
+
+		
 
 	const onAddProduct = product => {
-
-		console.log(props);
-
-		const allProducts = props.allProducts;
-		const setAllProducts = props.setAllProducts;
-		const total = props.total;
-		const setTotal = props.setTotal;
-		const countProducts = props.countProducts;
-		const setCountProducts = props.setCountProducts;
-
 
 		if (allProducts.find(item => item.id === product.id)) {
 			const products = allProducts.map(item =>
@@ -72,8 +70,8 @@ export const ProductList = ({
 							<button className='btn-add-product' onClick={() => onAddProduct(product)}>
 								Añadir al carrito
 							</button>
-
-							<Link to="/detalle_producto">
+							
+							<Link to={`/detalle_producto/${product.id}`}>
 								<button className='btn-detail-product'>
 									Ir al detalle del producto
 								</button>

@@ -1,0 +1,169 @@
+
+.img {
+    max-width: 300px; /* Ajusta el valor a tu preferencia para hacer la imagen más pequeña */
+  }
+
+.img-container {
+    display: inline-block; /* Esto hace que el contenedor sea del tamaño de la imagen */
+    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que su contenedor */
+  }
+
+.container-title {
+	padding: 50px;
+    font-size: 36px;
+	background-color: #eee;
+	margin-bottom: 20px;
+	color: #222;
+}
+
+main {
+	display: flex;
+
+}
+
+.container-img {
+	background-color: #f7f7f9;
+
+}
+
+.container-info-product {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-price {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container-price span {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.container-details-product {
+	padding: 30px 0;
+}
+
+.form-group {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.form-group label {
+	color: #222;
+	font-weight: 700;
+}
+
+.form-group select {
+	border: none;
+	padding: 12px 15px;
+	background-color: #f7f7f7;
+	color: #666;
+}
+
+
+.container-add-cart {
+	display: flex;
+	gap: 20px;
+	padding-bottom: 50%;
+    padding-top: 150px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.container-quantity {
+	position: relative;
+}
+
+.input-quantity {
+	background-color: #f7f7f7;
+	border: none;
+	padding: 10px;
+	width: 60px;
+	height: 100%;
+	color: #666;
+	font-weight: 500;
+	line-height: 0;
+}
+
+.input-quantity:focus {
+	outline: none;
+}
+
+.btn-add-to-cart {
+	border: none;
+	background-color: #252525;
+	padding: 10px;
+	color: #f7f7f7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.btn-add-to-cart:hover {
+	color: #6cb6d8;
+}
+
+.hidden {
+	display: none;
+}
+
+.container-description,
+.container-additional-information,
+.container-reviews {
+	flex-direction: column;
+    width: 1000px;
+}
+
+.title-description,
+.title-additional-information,
+.title-reviews {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.title-description h4,
+.title-additional-information h4,
+.title-reviews h4 {
+	font-weight: 300;
+	color: #666;
+	font-size: 25px;
+}
+
+.text-description,
+.text-additional-information,
+.text-reviews {
+	font-size: 18px;
+	color: #252525;
+	line-height: 22px;
+	margin-top: 18px;
+}
+
+.container-social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card-list-products {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+}
+
+.card {
+	cursor: pointer;
+}
+
+.card-img {
+	background: transparent;
+	margin-bottom: 3px;
+}
