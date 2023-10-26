@@ -4,6 +4,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Logo from "../images/Logo.png"
 import Carrito from '../components/Carrito';
 import Citas from '../components/Citas';
+import SearchBar from '../components/SearchBar';
 
 const Navbar = ({
     allProducts,
@@ -30,6 +31,8 @@ const Navbar = ({
                 <CustomLink to="/Servicios">Servicios</CustomLink>
                 <CustomLink to="/Contacto">Contacto</CustomLink>
             </ul>
+
+            <SearchBar />
             
             <Carrito
               allProducts={allProducts}
