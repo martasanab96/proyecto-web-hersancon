@@ -2,6 +2,7 @@ import { data } from '../data';
 import '../assets/DetalleProducto.css';
 import { useParams } from 'react-router-dom';
 import onAddProduct  from './ProductList';
+import { Link } from 'react-router-dom';
 
 const DetalleProducto =(
 	props
@@ -16,8 +17,50 @@ const DetalleProducto =(
 	const countProducts = props.countProducts;
 	const setCountProducts = props.setCountProducts;
 
-	console.log("productos")
-    console.log(props)
+
+	const mediaRating = product => {
+
+		console.log(productId)
+		console.log(data)
+
+		const producto = data.find(item => item.id === product.id);
+
+		console.log(producto)
+
+		if (!producto ){
+			console.log("aqui")
+			return 0;
+		  }
+		
+		  const totalRating = producto.reseñas.reduce((accumulator, review) => accumulator + review.rating, 0);
+		
+		  const averageRating = totalRating / producto.reseñas.length;
+
+		  console.log("estrellas")
+		  console.log(averageRating)
+		
+		  return averageRating;
+	}
+
+	function renderStarRating(rating) {
+		console.log(rating)
+		const stars = [];
+		for (let i = 1; i <= 5; i++) {
+		  if (i <= rating) {
+			stars.push(<span key={i} className="star">&#9733;</span>); // Estrella rellena
+		  } else {
+			stars.push(<span key={i} className="star">&#9734;</span>); // Estrella vacía
+		  }
+		}
+		return stars;
+	  }
+
+
+
+	const backProducts = () => {
+		console.log("Volviendo a home...")
+
+	}
 
 	const onAddProduct = product => {
 
@@ -50,6 +93,10 @@ const DetalleProducto =(
 	.map(product => (
 		
 		<div className="cuerpo">
+		<Link to={'/Productos'}>
+			<span className="back_home" onClick={backProducts}>Volver a productos</span>
+		</Link>
+		
 		<div className="container-title">{product.nameProduct}</div>
 		<main>
 		<div className="container-img">
@@ -94,7 +141,35 @@ const DetalleProducto =(
 
 
 		
+
+		<div className="review-body">
+			<div className="review-header">Reseñas</div>
+			<div className='review-stars'> 
+				{renderStarRating(mediaRating(product))} {/* Llama a una función para generar las estrellas */}
+			</div>
 		</div>
+
+		<div class="reviewrating">a base de <strong>{product.reseñas.length} evaluaciones</strong></div>
+
+		<div className="review-dynamic-container">
+
+		{product.reseñas.map(reseña => (
+
+			<div className="review-dynamic">
+			<div className="review-scoller pad_backward">
+			<div className="review-detail">
+			<div className="review-avatar">
+				<img src={reseña.img} alt={reseña.user} className="review-img"/>
+			<div className="review-name">{reseña.user}</div></div>
+			<div className="review-rating">
+				{renderStarRating(reseña.rating)} {/* Llama a una función para generar las estrellas */}
+			</div>
+			<div className="review-text">{reseña.comment}</div></div></div></div>
+
+					))}
+
+		
+		</div></div>
 		
 	))}
 	</>
