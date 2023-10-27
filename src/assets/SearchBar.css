@@ -1,0 +1,46 @@
+/* Estilos para el contenedor de búsqueda */
+.search-bar {
+	position: relative;
+	margin-right: 20px; /* Espacio entre el SearchBar y otros elementos en el navbar */
+	margin-top: 1.4rem;
+}
+  
+  /* Estilos para el input de búsqueda */
+  .search-bar input {
+	width: 200px; /* Ancho del input de búsqueda */
+	padding: 10px;
+  }
+  
+  /* Estilos para el contenedor de sugerencias */
+  .suggestions {
+	position: absolute;
+	top: 100%; /* Coloca las sugerencias debajo del input */
+	left: 0;
+	width: 100%;
+	background-color: #fff; /* Fondo blanco o el color que desees */
+	color: #000;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para las sugerencias */
+	z-index: 1; /* Asegura que las sugerencias estén sobre otros elementos */
+	display: none; /* Ocultar las sugerencias por defecto */
+  }
+  
+  /* Mostrar las sugerencias cuando el input tiene valor */
+  .search-bar input:focus + .suggestions,
+  .search-bar input:active + .suggestions {
+	display: block;
+  }
+  
+  /* Estilos para cada sugerencia */
+  .suggestion {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+  }
+  
+  .suggestion:last-child {
+	border-bottom: none; /* Elimina la línea divisoria del último elemento */
+  }
+  
+  .suggestion:hover {
+	background-color: #f0f0f0;
+  }
