@@ -1,9 +1,7 @@
 import { data } from '../data';
 import '../assets/ProductList.css';
-import { useHistory, Link } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
-import { useLocation } from 'react-router-dom'
-import {useState, useEffect} from 'react'
+import {Link } from 'react-router-dom';
+
 
 
 

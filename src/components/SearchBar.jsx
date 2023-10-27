@@ -25,16 +25,18 @@ const SearchBar = () => {
 
   return (
     <div className="search-bar">
+     
       <input
         placeholder="Buscar"
         onChange={handleInputChange}
         value={query}
       />
       {isActive && (
+        
         <div className="suggestions">
           {suggestions.map((product) => (
-            <Link to={`/detalle_producto/${product.id}`}>
-            <div className="suggestion" key={product.id}>
+            <Link to={`/detalle_producto/${product.id}`} key={product.id}>
+            <div className="suggestion">
               {product.nameProduct}
             </div>
             </Link>

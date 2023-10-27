@@ -14,21 +14,21 @@
   /* Estilos para el contenedor de sugerencias */
   .suggestions {
 	position: absolute;
-	top: 100%; /* Coloca las sugerencias debajo del input */
+	top: 100%;
 	left: 0;
 	width: 100%;
-	background-color: #fff; /* Fondo blanco o el color que desees */
+	background-color: #fff;
 	color: #000;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para las sugerencias */
-	z-index: 1; /* Asegura que las sugerencias estén sobre otros elementos */
-	display: none; /* Ocultar las sugerencias por defecto */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	opacity: 0; /* Hacer que las sugerencias sean invisibles */
   }
   
-  /* Mostrar las sugerencias cuando el input tiene valor */
   .search-bar input:focus + .suggestions,
   .search-bar input:active + .suggestions {
-	display: block;
+	opacity: 1; /* Hacer que las sugerencias sean visibles */
   }
+  
   
   /* Estilos para cada sugerencia */
   .suggestion {
