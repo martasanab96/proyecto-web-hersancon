@@ -9,7 +9,7 @@ import {Route, Routes} from "react-router-dom"
 import Footer from './components/Footer';
 import "./assets/App.css";
 import { useCookies } from 'react-cookie';
-
+import { data } from './data';
 import Carrito from './components/Carrito';
 import DetalleProducto from './components/DetalleProducto';
 
@@ -21,6 +21,15 @@ function App() {
   const [countProducts, setCountProducts] = useState(0);
   const [countCitas, setCountCitas] = useState(0);
   const [allCitas, setAllCitas] = useState([]);
+  const [sortDir, setSortDir] = useState("none");
+
+  const maxPrice = data.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
+
+
+  console.log("El máximo valor es:", maxPrice);
+
+  const [value, setValue] = useState([0, maxPrice]);
+
 
   return (
     <>
@@ -51,10 +60,28 @@ function App() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-          
+            sortDir={sortDir}
+            setSortDir={setSortDir}
+            value={value}
+            setvalue={setValue}
+
+
           />} />
           <Route path ="/Contacto" element={<Contacto />} />
-          <Route path="/detalle_producto" element={<DetalleProducto />} />
+          <Route path="/detalle_producto/:productId" element={<DetalleProducto 
+          
+            allProducts={allProducts}
+            setAllProducts={setAllProducts}
+            total={total}
+            setTotal={setTotal}
+            countProducts={countProducts}
+            setCountProducts={setCountProducts}
+            sortDir={sortDir}
+            setSortDir={setSortDir}
+            value={value}
+            setvalue={setValue}
+
+          />} />
         </Routes>
       </div>
 	

@@ -18,7 +18,6 @@ const Navbar = ({
     setCountCitas,
 }) => {
     
-    console.log(allProducts)
     return (
         <nav className="nav">
             <Link to="/" className='logo-link'>
