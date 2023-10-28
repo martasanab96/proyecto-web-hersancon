@@ -81,7 +81,7 @@ const Registro = (props) => {
         </button>
       </form>
       <div className="message">
-        ¿Ya tienes una cuenta? <Link to="/Login">Iniciar Sesión</Link>
+        ¿Ya tienes una cuenta? <Link to="/Login" {...props}>Iniciar Sesión</Link>
       </div>
     </div>
   );
