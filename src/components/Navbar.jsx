@@ -17,6 +17,9 @@ const Navbar = ({
     setAllCitas,
     countCitas,
     setCountCitas,
+    isAuthenticated,
+    setIsAuthenticated,
+    logout
 }) => {
     
     return (
@@ -33,23 +36,30 @@ const Navbar = ({
 
             <SearchBar />
             
-            <Carrito
-              allProducts={allProducts}
-              setAllProducts={setAllProducts}
-              total={total}
-              setTotal={setTotal}
-              countProducts={countProducts}
-              setCountProducts={setCountProducts}
-            />
+            <ul className='cambiante'>
+            {isAuthenticated ? (
+                <>
+                <Carrito
+                allProducts={allProducts}
+                setAllProducts={setAllProducts}
+                total={total}
+                setTotal={setTotal}
+                countProducts={countProducts}
+                setCountProducts={setCountProducts}
+              />
 
+              <button className='cierre-sesion' onClick={logout} >Cerrar sesión</button>
 
+              </>
+            ) : (
+              <Link to="/Login" className='login'
+                isAuthenticated = {isAuthenticated}
+                setIsAuthenticated = {setIsAuthenticated}
+              >Iniciar sesión</Link>
+            )}
+            </ul>    
             
-            <Citas
-              allCitas={allCitas}
-              setAllCitas={setAllCitas}
-              countCitas={countCitas}
-              setCountCitas={setCountCitas}
-            />
+
         </nav>
     )
 }

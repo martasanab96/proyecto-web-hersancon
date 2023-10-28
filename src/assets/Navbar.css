@@ -22,7 +22,8 @@ color: white;
 display: flex;
 align-items: stretch;
 gap: 2rem;
-padding: 0 0rem;
+padding-left: 0 0rem;
+padding-right: 1rem;
 position: fixed;
 top: 0;
 width: 100%;
@@ -36,6 +37,7 @@ display: flex;
 gap: 1rem;
 font-size: 100%;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
 }
 
 .nav a {
@@ -54,3 +56,21 @@ background-color: #555;
 .nav li:hover {
 background-color: #777;
 }
+
+.cambiante {
+    align-items: center;
+}
+
+.cierre-sesion {
+    background-color: black;
+}
+
+.cierre-sesion:hover {
+    background-color: #5bdefa; /* Color de fondo al pasar el ratón */
+    color: black; /* Color del texto al pasar el ratón */
+  }
+
+.login:hover {
+    background-color: #5bdefa; /* Color de fondo al pasar el ratón */
+    color: black; /* Color del texto al pasar el ratón */
+  }
