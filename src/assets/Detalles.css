@@ -266,10 +266,19 @@ main {
 	margin-right: 10px; /* Espacio entre la imagen y el nombre del usuario */
   }
 
+  .recomendacion-img {
+	width: 100%; /* Ajusta el ancho de la imagen según tus necesidades */
+	height: 100%; /* Ajusta la altura de la imagen según tus necesidades */
+  }
   .review-name {
 	font-weight: bold;
   }
   
+  .recomendacion-name {
+	font-weight: bold;
+	font-size: 20px;
+  }
+
   .review-text {
 	text-align: center; /* Centrar el texto dentro del contenedor */
   }

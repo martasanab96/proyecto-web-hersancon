@@ -30,8 +30,8 @@ export const data = [
             {user: "manny",rating:4, comment:"He comprado este producto y ha salido muy bien. He podido instalarlo solo.", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "gaxx",rating:5, comment: "Funciona muy bien. Fácil de instalar y útil.", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
         recomendaciones:[
-            {id: 102,
-             id: 8}
+            {id: 102},
+            {id: 8}
         ]
     },
     {
@@ -63,8 +63,8 @@ export const data = [
             {user: "angelneo",rating:5,comment:"Motor bueno. Funciona correctamente", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "manny",rating:3, comment:"Un poco difícil de instalar. He tenido que llamar a un técnico", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
         recomendaciones:[
-            {id: 104,
-             id: 5}
+            {id: 104},
+             {id: 5}
         ]
     },
     {
@@ -80,8 +80,8 @@ export const data = [
             {user: "manny",rating:5, comment:"Motor en kit completo, motor suave sin ruidos, facilidad ajuste carrera, todo ajusta perfectamente. Funciona perfectamente. ", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "Claudia",rating:5, comment:"No me ha dado tiempo a usarlo pero funciona", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
         recomendaciones:[
-            {id: 4,
-             id: 104}
+            {id: 4},
+            {id: 104}
         ]
 
     },
@@ -95,8 +95,8 @@ export const data = [
         tipo: "Seguridad",
         reseñas:  [{user:"Angiee", rating:5, comment:"Me ha encantado, ya no tengo que llevar llaves cuando salgo de casa, un antes y un despues", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
         recomendaciones:[
-            {id: 105,
-             id: 7}
+            {id: 105},
+            {id: 7}
         ]
     },
 
@@ -110,8 +110,8 @@ export const data = [
         tipo: "Seguridad",
         reseñas:  [],
         recomendaciones:[
-            {id: 6,
-             id: 105}
+            {id: 6},
+            {id: 105}
         ]
     },
     {
@@ -137,8 +137,8 @@ export const data = [
         tipo: "Iluminacion",
         reseñas:  [{user:"JJGamer", rating:4, comment:"Le da muchisimo ambiente a mi cuarto, me encanta! ", img:"https://img.utdstc.com/icon/e72/8cb/e728cb83db52c8fc5eb833c9fd6477b6e7ab42ed9ecd8239261d06d69894b6a5:200"}],
         recomendaciones:[
-            {id: 103,
-             id: 1}
+            {id: 103},
+            {id: 1}
         ]
     }
 

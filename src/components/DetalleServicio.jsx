@@ -1,8 +1,9 @@
-import { data } from '../data_servicios';
+import { data_servicios } from '../data_servicios';
 import '../assets/Detalles.css';
 import { useParams } from 'react-router-dom';
 import onAddProduct  from './ProductList';
 import { Link } from 'react-router-dom';
+import { data } from '../data';
 
 const DetalleServicio =(
 	props
@@ -15,10 +16,11 @@ const DetalleServicio =(
 	const setTotal = props.setTotal;
 	const countProducts = props.countProducts;
 	const setCountProducts = props.setCountProducts;
-	
+	const data_total = data.concat(data_servicios);
+
 	const mediaRating = product => {
 
-		const producto = data.find(item => item.id === product.id);
+		const producto = data_servicios.find(item => item.id === product.id);
 
 
 		if (!producto ){
@@ -79,7 +81,7 @@ const DetalleServicio =(
 		<>
 
 	<div className="card"></div>
-	{data.filter(product => product.id == servicioId)
+	{data_servicios.filter(product => product.id == servicioId)
 	.map(product => (
 		
 		<div className="cuerpo">
@@ -125,37 +127,83 @@ const DetalleServicio =(
 
 		</main>
 
-
-		
-
 		<div className="review-body">
-			<div className="review-header">Reseñas</div>
-			<div className='review-stars'> 
-				{renderStarRating(mediaRating(product))} {/* Llama a una función para generar las estrellas */}
-			</div>
+				<div className="review-header">Recomendaciones</div>
 		</div>
 
-		<div class="reviewrating">a base de <strong>{product.reseñas.length} evaluaciones</strong></div>
+			<div class="reviewrating">Otros servicios y productos parecidos</div>
 
-		<div className="review-dynamic-container">
+			<div className="review-dynamic-container">
+				{console.log("recomendaciones")}
+				{console.log(product.recomendaciones)}
 
-		{product.reseñas.map(reseña => (
+				{product.recomendaciones && product.recomendaciones.length > 0 && (product.recomendaciones.map(recomendacionId => (
+					data_total.filter(item => item.id === recomendacionId.id)
+					.map(recomendacion  => (
+						<div className="review-dynamic">
+							<div className="review-scoller pad_backward">
+								<div className="review-detail">
 
-			<div className="review-dynamic">
-			<div className="review-scoller pad_backward">
-			<div className="review-detail">
-			<div className="review-avatar">
-				<img src={reseña.img} alt={reseña.user} className="review-img"/>
-			<div className="review-name">{reseña.user}</div></div>
-			<div className="review-rating">
-				{renderStarRating(reseña.rating)} {/* Llama a una función para generar las estrellas */}
-			</div>
-			<div className="review-text">{reseña.comment}</div></div></div></div>
 
-					))}
+								{recomendacion.id >100 ? (
+										<Link to={`/detalle_servicio/${recomendacion.id}`}>
+											<div className="recomendacion-img"/> <img src={recomendacion.img} className="recomendacion-img"/>
+											<div className="recomendacion-name">{recomendacion.nameProduct}</div>
+										</Link>
+									) : (
+										<Link to={`/detalle_producto/${recomendacion.id}`}>
+											<div className="recomendacion-img"/> <img src={recomendacion.img} className="recomendacion-img"/>
+											<div className="recomendacion-name">{recomendacion.nameProduct}</div>
+										</Link>
+									)}
+								
+								</div>
+							</div>
+						</div>
+
+							)))))}
 
 		
-		</div></div>
+			</div>
+
+		
+			<div className="review-body">
+				<div className="review-header">Reseñas</div>
+				<div className='review-stars'> 
+					{renderStarRating(mediaRating(product))} {/* Llama a una función para generar las estrellas */}
+				</div>
+			</div>
+
+			<div class="reviewrating">a base de <strong>{product.reseñas.length} evaluaciones</strong></div>
+
+			<div className="review-dynamic-container">
+
+				{product.reseñas.map(reseña => (
+
+					<div className="review-dynamic">
+						<div className="review-scoller pad_backward">
+							<div className="review-detail">
+								<div className="review-avatar">
+									<img src={reseña.img} alt={reseña.user} className="review-img"/>
+										<div className="review-name">{reseña.user}</div>
+								</div>
+								<div className="review-rating">
+									{renderStarRating(reseña.rating)} {/* Llama a una función para generar las estrellas */}
+								</div>
+								<div className="review-text">{reseña.comment}</div>
+							</div>
+						</div>
+					</div>
+
+							))}
+
+		
+			</div>
+
+			
+		</div>
+
+		
 		
 	))}
 	</>

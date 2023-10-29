@@ -21,28 +21,25 @@ const Productos = (
 
     return (
 
-        <>
-        
-
-        <div className="title-description-productos">
-            <h4>PRODUCTOS</h4>
-            <i className="fa-solid fa-chevron-down"></i>
-        </div>
+        <div className='container_productos'>
+        <h1 className="title-description-productos">PRODUCTOS</h1>
 
         <div className='filter-menu-container'>
         <FilterMenu onFilterChange={handleFilterChange} /></div>
 
-        <div className="filtros">
-        <RangeSliderFilter 
-                props = {props}/>
-        <Dropdown 
-                props = {props}/>
+        <div className="contenido-productos">
 
-        </div>
-        <ProductList
-				props = {props}
-			/>
-        </>
+            <div className="filtros">
+            <RangeSliderFilter 
+                    props = {props}/>
+            <Dropdown 
+                    props = {props}/>
+
+            </div>
+            <ProductList
+                    props = {props}
+                />
+        </div></div>
     )
 }
 

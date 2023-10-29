@@ -29,6 +29,7 @@
   .nav-menu.active {
     left: 0;
     transition: 350ms;
+    margin-top: 80px;
   }
   
   .nav-text {
@@ -75,6 +76,8 @@
     padding: 0 20px;
     border-radius: 7px;
     cursor: pointer;
+    margin-left: 16px;
+    margin-bottom: 10px;
   }
   
   /* Estilo de los enlaces en hover */
@@ -95,9 +98,4 @@
   /* Estilo del texto "Cerrar" en el botón de cerrar */
   .navbar-toggle span {
     margin-left: 16px;
-  }
-    
-  span {
-    margin-left: 16px;
-    margin-bottom: 10px;
   }

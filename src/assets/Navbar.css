@@ -27,6 +27,7 @@ padding-right: 1rem;
 position: fixed;
 top: 0;
 width: 100%;
+z-index: 9999;
 }
 
 .nav ul {
@@ -63,6 +64,7 @@ background-color: #777;
 
 .cierre-sesion {
     background-color: black;
+    font-size: 100%;
 }
 
 .cierre-sesion:hover {

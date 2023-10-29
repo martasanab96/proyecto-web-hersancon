@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import "./assets/App.css";
 import { useCookies } from 'react-cookie';
 import { data } from './data';
+import { data_servicios } from './data_servicios';
+
 import Carrito from './components/Carrito';
 import DetalleProducto from './components/DetalleProducto';
 import Axios from 'axios'; // Importa Axios para hacer solicitudes HTTP
@@ -30,11 +32,9 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [filter, setFilter] = useState('Todo');
 
+  const data_total = data.concat(data_servicios);
 
-  const maxPrice = data.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
-
-
-  console.log("El máximo valor es:", maxPrice);
+  const maxPrice = data_total.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
 
   const [value, setValue] = useState([0, maxPrice]);
 
@@ -100,6 +100,9 @@ function App() {
             setSortDir={setSortDir}
             value={value}
             setvalue={setValue}
+            filter={filter}
+            setFilter={setFilter}
+
           />} />
           <Route path ="/Productos/*" element={<Productos 
             allProducts={allProducts}

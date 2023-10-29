@@ -21,12 +21,6 @@
 
 }
 
-.filtros {
-	display: flex;
-	justify-content: flex-end;
-	padding-right: 0%;
-    margin-top: 0%;
-}
 
 .filter-menu-container {
 	position: absolute; /* Posición fija para mantenerlo en la parte superior */
@@ -204,7 +198,9 @@
 	display: none;
 }
 
-.btn-clear-all, .btn-pay-all, .btn-add-product, .btn-detail-product {
+
+
+.btn-add-product, .btn-detail-product {
 	border: none;
 	background-color: #000;
 	color: #fff;
@@ -219,26 +215,7 @@
   font-size: 16px;
   transition: all .3s ease;
   flex:1;
-  margin-right: 10px; /* Espacio entre los botones */
-
-}
-
-.btn-add-product, .btn-detail-product {
-	border: none;
-	background-color: #000;
-	color: #fff;
-	padding: 5px 0;
-	display: block;
-	width: 80%;
-	margin-top: 5px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	font-family: inherit;
-	cursor: pointer;
-  font-size: 20px;
-  transition: all .3s ease;
-  flex:1;
-  margin-right: 8px; /* Espacio entre los botones */
+  margin-right: 50px; /* Espacio entre los botones */
 
 }
 
@@ -289,18 +266,36 @@
 }
 
 
-.title-description-productos {
-	text-align: center; /* Alinea el texto al centro horizontal */
-	margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
-  }
-
-.title-description-productos h4 {
-	font-weight: 600;
-	color: #666;
-	font-size: 40px;
-	display: inline;
-}
-
 .link-style {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+
+  /* Contenedor principal */
+.container_productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    color: #333;
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas pequeñas */
+  }
+
+  .filtros {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 0%;
+    margin-top: 0%;
+
+}
+
+  
+  /* Título "SOBRE NOSOTROS" */
+  .title-description-productos {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #666; /* Color azul como ejemplo */
+    font-size: 40px;
+    width: 100%; /* Asegura que el título ocupe todo el ancho */
   }

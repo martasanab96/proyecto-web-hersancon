@@ -3,6 +3,7 @@ import '../assets/Detalles.css';
 import { useParams } from 'react-router-dom';
 import onAddProduct  from './ProductList';
 import { Link, useNavigate } from 'react-router-dom';
+import { data_servicios } from '../data_servicios';
 
 const DetalleProducto =(
 	props
@@ -18,6 +19,8 @@ const DetalleProducto =(
 	const setCountProducts = props.setCountProducts;
 	const isAuthenticated = props.isAuthenticated;
 	const setIsAuthenticated = props.setIsAuthenticated;
+	const data_total = data.concat(data_servicios);
+
 
 	const navigate = useNavigate();
 
@@ -141,7 +144,45 @@ const DetalleProducto =(
 
 		</main>
 
+		
+		<div className="review-body">
+				<div className="review-header">Recomendaciones</div>
+		</div>
 
+			<div class="reviewrating">Otros servicios y productos parecidos</div>
+
+			<div className="review-dynamic-container">
+				{console.log("recomendaciones")}
+				{console.log(product.recomendaciones)}
+
+				{product.recomendaciones && product.recomendaciones.length > 0 && (product.recomendaciones.map(recomendacionId => (
+					data_total.filter(item => item.id === recomendacionId.id)
+					.map(recomendacion  => (
+						<div className="review-dynamic">
+							<div className="review-scoller pad_backward">
+								<div className="review-detail">
+
+
+								{recomendacion.id >100 ? (
+										<Link to={`/detalle_servicio/${recomendacion.id}`}>
+											<div className="recomendacion-img"/> <img src={recomendacion.img} className="recomendacion-img"/>
+											<div className="recomendacion-name">{recomendacion.nameProduct}</div>
+										</Link>
+									) : (
+										<Link to={`/detalle_producto/${recomendacion.id}`}>
+											<div className="recomendacion-img"/> <img src={recomendacion.img} className="recomendacion-img"/>
+											<div className="recomendacion-name">{recomendacion.nameProduct}</div>
+										</Link>
+									)}
+								
+								</div>
+							</div>
+						</div>
+
+							)))))}
+
+		
+			</div>
 		
 
 		<div className="review-body">
