@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "../assets/Login.css";
-import { Link} from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import Axios from 'axios';
 
 const Login = (
@@ -8,6 +8,9 @@ const Login = (
 ) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+  const setIsAuthenticated = props.setIsAuthenticated;
+
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -17,12 +20,25 @@ const Login = (
     setPassword(e.target.value);
   };
 
-  const handleLogin = () => {
-    
-    // Aquí puedes agregar la lógica de autenticación, como enviar los datos a un servidor o verificar en el cliente.
-    // Por ahora, solo mostramos los datos en la consola.
-    console.log('Email:', email);
-    console.log('Contraseña:', password);
+  const handleLogin = async () => {
+    try {
+      const response = await Axios.post('http://localhost:3001/api/iniciar-sesion', {
+        email,
+        password,
+      });
+
+      if (response.status === 200) {
+        // Login exitoso, puedes redirigir al usuario a la página de inicio de sesión u otra página.
+        navigate('/Inicio');
+        setIsAuthenticated(true);
+      } else {
+        window.alert("Las credenciales son incorrectas.")
+      }
+    } catch (error) {
+      // Maneja errores, por ejemplo, muestra un mensaje de error al usuario.
+      console.error('Error al logearse:', error);
+      window.alert("Las credenciales son incorrectas.")
+    }
   };
 
   return (
@@ -52,7 +68,7 @@ const Login = (
         </button>
       </form>
       <div className='message'>
-        ¿No tienes una cuenta? <Link to="/Registro" {...props}>Regístrate</Link>
+        ¿No tienes una cuenta? <Link to="/Registro" >Regístrate</Link>
       </div>
     </div>
   );

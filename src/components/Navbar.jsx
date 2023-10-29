@@ -53,8 +53,6 @@ const Navbar = ({
               </>
             ) : (
               <Link to="/Login" className='login'
-                isAuthenticated = {isAuthenticated}
-                setIsAuthenticated = {setIsAuthenticated}
               >Iniciar sesión</Link>
             )}
             </ul>    

@@ -35,13 +35,15 @@ const Registro = (props) => {
 
       if (response.status === 200) {
         // Registro exitoso, puedes redirigir al usuario a la página de inicio de sesión u otra página.
-        window.alert('Registro exitoso.');
         navigate('/Inicio');
         setIsAuthenticated(true);
+      } else {
+        window.alert("Ese usuario ya existe.")
       }
     } catch (error) {
       // Maneja errores, por ejemplo, muestra un mensaje de error al usuario.
       console.error('Error al registrar:', error);
+      window.alert("Ese usuario ya existe.")
     }
   };
 
@@ -81,7 +83,7 @@ const Registro = (props) => {
         </button>
       </form>
       <div className="message">
-        ¿Ya tienes una cuenta? <Link to="/Login" {...props}>Iniciar Sesión</Link>
+        ¿Ya tienes una cuenta? <Link to="/Login">Iniciar Sesión</Link>
       </div>
     </div>
   );
