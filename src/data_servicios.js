@@ -3,7 +3,7 @@
 
 export const data = [
     {
-        id: 1,
+        id: 101,
         img: "https://www.totalenergies.es/sites/default/files/2021-12/instalacion%20paneles%20solares.jpg",
         nameProduct: "Instalación de Placas Solares",
         price: 1000,
@@ -12,13 +12,9 @@ export const data = [
         reseñas: [
             {user: "angelneo", rating:5,comment:"Buena instalación", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "manny",rating:3, comment:"Me han sorprendido. Todo ha ido como la seda.", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
-        recomendaciones:[
-            {id: 2,
-            id: 3}
-        ]
         },
     {
-        id: 2,
+        id: 102,
         img: "https://www.bdbnpresupuestos.com/wp-content/uploads/2015/01/instalacion-termostato-digital.jpg.webp",
         nameProduct: "Instalación de control de temperatura",
         price: 99.99,
@@ -27,10 +23,13 @@ export const data = [
         detail: "Transforma tu hogar en un oasis de eficiencia y comodidad con nuestro servicio de control de temperatura. En la era de la domótica, tu sistema de climatización puede ser tan inteligente como tú.",
         reseñas: [
             {user: "angelneo",rating:5,comment:"Instalación rápida y profesional", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"}
+        ],
+        recomendaciones:[
+            {id: 2}
         ]
     },
     {
-        id: 3,
+        id: 103,
         img: "https://www.lampamania.es/ImgGalery/Img1/Clanky/aktuality-home/inteligentni_osvetleni.jpg",
         nameProduct: "Instalación de control de iluminación",
         price: 99.99,
@@ -39,10 +38,14 @@ export const data = [
         detail:"Ilumina tu vida con elegancia y eficiencia gracias a nuestro servicio de instalación de control de iluminación inteligente. Imagina tener el poder de personalizar la atmósfera de tu hogar con un toque. Con nuestro equipo de expertos en domótica, hacemos que la iluminación de tu hogar se adapte a tu estilo de vida.",
         reseñas:[
             {user: "manny",rating:3, comment:"Resultados perfectos, las luces quedan chulisimas !", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}
+        ],
+        recomendaciones:[
+            {id: 1,
+             id: 9}
         ]
     },
     {
-        id: 4,
+        id: 104,
         img: "https://persianaslavirgen.com/wp-content/uploads/2019/10/Persianas-inteligentes.jpg",
         nameProduct: "Instalación de control de persianas",
         price: 149.99,
@@ -50,10 +53,14 @@ export const data = [
         detail: "Eleva el confort y el estilo de tu hogar con nuestro servicio especializado de instalación de persianas inteligentes. Experimenta un nuevo nivel de conveniencia al tener el control total sobre la iluminación y la privacidad de tus espacios con solo un toque. Nuestro equipo de expertos en instalaciones te guiará a través de la transformación de tus ventanas con persianas que se adaptan a tu estilo de vida.",
         reseñas:[
             {user: "angelneo",rating:5,comment:"Motor bueno. Funciona correctamente", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
-            {user: "manny",rating:3, comment:"La instalación fue un poco larga pero estoy muy satisfecho con el resultado", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}]
+            {user: "manny",rating:3, comment:"La instalación fue un poco larga pero estoy muy satisfecho con el resultado", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 4,
+             id: 5}
+        ]
     },
     {
-        id: 5,
+        id: 105,
         img: "https://zonapyme.prosegur.es/hubfs/control-de-presencia.jpg",
         nameProduct: "Instalación de control de presencia",
         price: 199.99,
@@ -61,6 +68,10 @@ export const data = [
         detail: "Optimiza la seguridad y la eficiencia en tu entorno con nuestro servicio especializado de control de presencia. Desde el monitoreo de acceso hasta la gestión inteligente de asistencia, proporcionamos soluciones avanzadas que garantizan un ambiente seguro y bien gestionado.",
         reseñas:[
             {user: "gaxx",rating:5,comment:"Desde que lo tengo duermo mucho mejor por las noches, le daria 10 estrellas si pudiese", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}
+        ],
+        recomendaciones:[
+            {id: 6,
+             id: 7}
         ]
     }
 ]
