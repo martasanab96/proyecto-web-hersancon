@@ -1,0 +1,56 @@
+.icon-container-inicio {
+    display: flex; /* Utiliza Flexbox para organizar los elementos en una fila */
+    justify-content: space-between; /* Espaciado equitativo entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+
+}
+
+.sistemas-container-el{
+    display: flex; /* Utiliza Flexbox para organizar los elementos en una fila */
+    justify-content: space-between; /* Espaciado equitativo entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Ajusta el tamaño del contenedor según sea necesario */
+}
+
+.text-and-image .row {
+    display: flex;
+    flex-direction: row; /* Alinear elementos en fila */
+    justify-content: space-between; /* Espacio entre los elementos */
+  }
+
+.text-and-image{
+    margin-top: 100px;
+    
+}
+
+.titles {
+    color: #666;
+}
+
+.text {
+    flex: 1; /* Esto permite que el texto ocupe el espacio disponible en el contenedor */
+    padding: 20px; /* Agrega espaciado según sea necesario */
+}
+
+.image {
+    flex: 1; /* Esto permite que la imagen ocupe el espacio disponible en el contenedor */
+    /* Puedes ajustar el espaciado y otros estilos según tus necesidades */
+}
+
+.icons {
+    font-size: 20px;
+}
+
+.contenedor-icono-in{
+    text-align: center;
+}
+
