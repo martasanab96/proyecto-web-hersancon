@@ -14,8 +14,7 @@ export const data = [
             {user: "angelneo", rating:5,comment:"Las mejores bombillas que he probado", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "manny",rating:3, comment:"No me han servido para lo que necesitaba", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
         recomendaciones:[
-            {id: 2,
-            id: 3}
+            {id: 103}
         ]
         },
     {
@@ -29,7 +28,11 @@ export const data = [
         reseñas: [
             {user: "angelneo",rating:5,comment:"Necesitaba algo asi en casa!", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "manny",rating:4, comment:"He comprado este producto y ha salido muy bien. He podido instalarlo solo.", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"},
-            {user: "gaxx",rating:5, comment: "Funciona muy bien. Fácil de instalar y útil.", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}]
+            {user: "gaxx",rating:5, comment: "Funciona muy bien. Fácil de instalar y útil.", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 102,
+             id: 8}
+        ]
     },
     {
         id: 3,
@@ -42,7 +45,10 @@ export const data = [
         tipo: "Sonido",
         reseñas:[
             {user: "angelneo",rating:3,comment:"Altavoz básico y normal", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
-            {user: "manny",rating:4, comment:"Calidad-precio está bastante bien.", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}]
+            {user: "manny",rating:4, comment:"Calidad-precio está bastante bien.", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 8 }
+        ]
     },
     {
         id: 4,
@@ -55,22 +61,86 @@ export const data = [
         tipo: "Persianas",
         reseñas:[
             {user: "angelneo",rating:5,comment:"Motor bueno. Funciona correctamente", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
-            {user: "manny",rating:3, comment:"Un poco difícil de instalar. He tenido que llamar a un técnico", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}]
+            {user: "manny",rating:3, comment:"Un poco difícil de instalar. He tenido que llamar a un técnico", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 104,
+             id: 5}
+        ]
     },
     {
         id: 5,
         img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZhPn4uIq14X3ya1LG7m1-CtHDcmBQ8EXKK81FYm5eM4icM876FxtWfV6Q7fZvpnvOVqidiLXA1-zrVj4Oi3cWZtnHdTHv6nH85JLoE4RLwMtgPmbiyx-O&usqp=CAE",
         nameProduct: "Motor para persiana de hasta 34Kg.",
-        price: 30.80,
+        price: 30.85,
         quantity: 1,
         detail: "Motor TG M 1817 para persianas del hogar de 18Nm a una velocidad de 17rpm para un peso máximo de persiana de 34Kg. para accionar persianas de casa, para persianas de ventana o para subir persianas de balcon de vivienda. Motor tubular para eje de 52 o 60 Motores para persianas de aluminio, motores para persianas de plástico, motores para persianas exteriores, para persianas de seguridad, motores para persianas enrollables o motores para persianas de compacto mini. Modelo TG M 1517 y TTGO TG de maniobra por interruptor de pared. Precio con IVA incluido. Motores para persianas de vivienda con el sistema de seguridad térmica. Venta de motores de la marca TTGO de regulación de los finales de carrera de abertura y cierre por mediación de los reguladores que se encuentran en el motor de la persiana. Motor de alto rendimiento y con la garantía CE. De sencilla instalación para eje de persianas de tubo de 60mm. En el precio del motor está incluido: el soporte, los acoples para eje caras planas, las instrucciones de montaje y la varilla de regulación.Ideal para motores para persianas de ventanas de vivenda.",
         tipo: "Persianas",
         reseñas:[
             {user: "angelneo",rating:4,comment:"El producto funciona muy bien, en general es intuitivo pero difícil de instalar.", img:"https://lh3.googleusercontent.com/a-/ACB-R5SJfNzRSkMsi2DoY_FBEC4L9BepE09SFh7tCkqFlA=s120-c-c0x00000000-cc-rp-mo-br100"},
             {user: "manny",rating:5, comment:"Motor en kit completo, motor suave sin ruidos, facilidad ajuste carrera, todo ajusta perfectamente. Funciona perfectamente. ", img:"https://lh3.googleusercontent.com/a-/ACB-R5THhTrhQXgQdEga9iQDb42oHAPzVQnORXa5hVsq=s120-c-c0x00000000-cc-rp-mo-br100"},
-            {user: "Claudia",rating:5, comment:"No me ha dado tiempo a usarlo pero funciona", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}]
+            {user: "Claudia",rating:5, comment:"No me ha dado tiempo a usarlo pero funciona", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 4,
+             id: 104}
+        ]
 
-        }
+    },
+    {
+        id: 6,
+        img: "https://www.hogarcomfy.com/2188-medium_default/catchface-negra.jpg",
+        nameProduct: "Cerradura inteligente",
+        price: 199.00,
+        quantity:1,
+        detail: "Experimenta un nuevo estándar de seguridad y comodidad con nuestra cerradura inteligente de última generación. Diseñada para integrarse perfectamente en hogares modernos, esta cerradura combina una tecnología avanzada con un elegante diseño para ofrecer una experiencia de seguridad sin esfuerzo.",
+        tipo: "Seguridad",
+        reseñas:  [{user:"Angiee", rating:5, comment:"Me ha encantado, ya no tengo que llevar llaves cuando salgo de casa, un antes y un despues", img:"https://lh3.googleusercontent.com/a/AGNmyxZfCPJNWHHOGfyPAPJO8icARzK9wt33ycM-YQsh=s120-c-c0x00000000-cc-rp-mo-br100"}],
+        recomendaciones:[
+            {id: 105,
+             id: 7}
+        ]
+    },
+
+    {
+        id: 7,
+        img: "https://www.seguridadprofesionalhoy.com/imagenes/2021/06/Cruiser.jpg",
+        nameProduct: "Cámara de seguridad inteligente",
+        price: 44.95,
+        quantity:1,
+        detail: "Asegura la tranquilidad de tu hogar con nuestra cámara de seguridad inteligente, una solución de vigilancia avanzada que combina tecnología de punta con funcionalidades inteligentes para una protección completa.",
+        tipo: "Seguridad",
+        reseñas:  [],
+        recomendaciones:[
+            {id: 6,
+             id: 105}
+        ]
+    },
+    {
+        id: 8,
+        img: "https://m.media-amazon.com/images/I/61inHz80D+L.jpg",
+        nameProduct: "Enchufe inteligente",
+        price: 25.55,
+        quantity:1,
+        detail: "Transforma tu hogar en un espacio conectado y eficiente con nuestro enchufe inteligente. Diseñado para simplificar tu vida cotidiana, este dispositivo te permite controlar tus electrodomésticos de manera remota y programar su funcionamiento para adaptarse a tu estilo de vida.",
+        tipo: "Enchufes",
+        reseñas:  [{user:"Hetbas", rating:5, comment:"Funciona bien", img:"https://img.menzig.es/a/0000/353-h0.jpg"}],
+        recomendaciones:[
+            {id: 3}
+        ]
+    },
+    {
+        id: 9,
+        img: "https://prendeluz.com/app/images/products/502030-1.webp",
+        nameProduct: "Luces LED de colores",
+        price: 17.95,
+        quantity:1,
+        detail: "Eleva la atmósfera de tu hogar con nuestra tira de luces LED RGB inteligente. Diseñada para brindar un espectro completo de colores y efectos, esta tira de luces te permite personalizar la iluminación de tus espacios según tu estado de ánimo, ocasión o simplemente para añadir un toque vibrante a tu vida diaria.",
+        tipo: "Iluminacion",
+        reseñas:  [{user:"JJGamer", rating:4, comment:"Le da muchisimo ambiente a mi cuarto, me encanta! ", img:"https://img.utdstc.com/icon/e72/8cb/e728cb83db52c8fc5eb833c9fd6477b6e7ab42ed9ecd8239261d06d69894b6a5:200"}],
+        recomendaciones:[
+            {id: 103,
+             id: 1}
+        ]
+    }
 
 
 ]
