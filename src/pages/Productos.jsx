@@ -38,9 +38,6 @@ const Productos = (
         <Dropdown 
                 props = {props}/>
 
-
-        
-
         </div>
         <ProductList
 				props = {props}

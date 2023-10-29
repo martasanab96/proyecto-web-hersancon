@@ -1,5 +1,5 @@
 import { data } from '../data';
-import '../assets/DetalleProducto.css';
+import '../assets/Detalles.css';
 import { useParams } from 'react-router-dom';
 import onAddProduct  from './ProductList';
 import { Link } from 'react-router-dom';
@@ -20,15 +20,10 @@ const DetalleProducto =(
 
 	const mediaRating = product => {
 
-		console.log(productId)
-		console.log(data)
-
 		const producto = data.find(item => item.id === product.id);
 
-		console.log(producto)
 
 		if (!producto ){
-			console.log("aqui")
 			return 0;
 		  }
 		
@@ -36,14 +31,11 @@ const DetalleProducto =(
 		
 		  const averageRating = totalRating / producto.reseñas.length;
 
-		  console.log("estrellas")
-		  console.log(averageRating)
 		
 		  return averageRating;
 	}
 
 	function renderStarRating(rating) {
-		console.log(rating)
 		const stars = [];
 		for (let i = 1; i <= 5; i++) {
 		  if (i <= rating) {

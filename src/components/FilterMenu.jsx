@@ -12,8 +12,7 @@ const FilterMenu = ({ onFilterChange }) => {
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
 
-  const categories = ['Todo','Iluminacion', 'Sonido', 'Calefaccion', 'Persianas'];
-
+  const categories = ['Todo', 'Ofertas', 'Iluminacion', 'Sonido', 'Calefaccion', 'Persianas'];
 
 
   return (
