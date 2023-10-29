@@ -9,6 +9,11 @@
       "nombre": "alberto",
       "email": "alberto",
       "password": "hola"
+    },
+    {
+      "nombre": "Marta",
+      "email": "martasanab96@gmail.com",
+      "password": "1234"
     }
   ]
 }

@@ -170,6 +170,19 @@
 	font-weight: 900;
 }
 
+/* Estilo para el precio original tachado */
+.original-price {
+	text-decoration: line-through; /* Tacha el precio original */
+	color: #666; /* Color del precio original */
+  }
+  
+  /* Estilo para el precio con oferta */
+  .price-with-offer {
+	font-size: 22px;
+	font-weight: 900;
+	color: #FF0000; /* Color del precio de oferta, puedes ajustarlo según tu preferencia */
+  }
+
 .info-product button {
 	border: 1px solid #283246; /* Agrega un borde de 2px de ancho y color negro */
 	border-radius: 10px; /* Ajusta el radio de borde según tu preferencia */
