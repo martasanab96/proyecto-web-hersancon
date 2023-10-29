@@ -114,9 +114,8 @@ function App() {
             setvalue={setValue}
             filter={filter}
             setFilter={setFilter}
-
-
-
+            setIsAuthenticated={setIsAuthenticated}
+            isAuthenticated={isAuthenticated}
           />} />
           <Route path ="/Contacto" element={<Contacto />} />
           <Route path="/detalle_producto/:productId" element={<DetalleProducto 
@@ -131,7 +130,8 @@ function App() {
             setSortDir={setSortDir}
             value={value}
             setvalue={setValue}
-
+            setIsAuthenticated={setIsAuthenticated}
+            isAuthenticated={isAuthenticated}
           />} />
 
           <Route path ="/Registro" element={<Registro 

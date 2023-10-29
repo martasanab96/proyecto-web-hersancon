@@ -69,5 +69,5 @@
   .login-container .message {
     font-size: 14px;
     margin-top: 20px; /* Aumenta el espacio entre el formulario y el mensaje de registro */
+    background-color: rgb(73, 62, 62);
   }
-  

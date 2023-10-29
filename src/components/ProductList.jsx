@@ -1,6 +1,6 @@
 import { data } from '../data';
 import '../assets/ProductList.css';
-import {Link } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/fa";
@@ -26,8 +26,10 @@ export const ProductList = ({
 	const setCountProducts = props.setCountProducts;
 	const filter = props.filter;
 	const setFilter=props.setFilter;
-		
+	const isAuthenticated = props.isAuthenticated;
+	const setIsAuthenticated = props.setIsAuthenticated;
 
+	const navigate = useNavigate();
 
 	const onAddProduct = product => {
 
@@ -76,9 +78,15 @@ export const ProductList = ({
 						
 						<div className='cart-buttons'>
 
-							<button className='btn-add-product' onClick={() => onAddProduct(product)}>
-								Añadir al carrito
-							</button>
+							{isAuthenticated ? (
+								<button className='btn-add-product' onClick={() => onAddProduct(product)}>
+									Añadir al carrito
+								</button>
+							) : (
+								<button className='btn-add-product' onClick={() => { navigate('/Login'); window.alert("Debes iniciar sesión para comprar productos online.")}}>
+									Añadir al carrito
+								</button>
+							)}
 							
 							<Link to={`/detalle_producto/${product.id}`} className="link-style">
 								<button className='btn-detail-product'>

@@ -2,7 +2,7 @@ import { data } from '../data';
 import '../assets/DetalleProducto.css';
 import { useParams } from 'react-router-dom';
 import onAddProduct  from './ProductList';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const DetalleProducto =(
 	props
@@ -16,7 +16,10 @@ const DetalleProducto =(
 	const setTotal = props.setTotal;
 	const countProducts = props.countProducts;
 	const setCountProducts = props.setCountProducts;
+	const isAuthenticated = props.isAuthenticated;
+	const setIsAuthenticated = props.setIsAuthenticated;
 
+	const navigate = useNavigate();
 
 	const mediaRating = product => {
 
@@ -131,10 +134,17 @@ const DetalleProducto =(
 						</div>
 					</div>
 
-					<button className='btn-add-to-cart' onClick={() => onAddProduct(product)}>
-						<i className="fa-solid fa-plus"></i>
-						Añadir al carrito
-					</button>
+					{isAuthenticated ? (
+						<button className='btn-add-to-cart' onClick={() => onAddProduct(product)}>
+							<i className="fa-solid fa-plus"></i>
+							Añadir al carrito
+						</button>
+					) : (
+						<button className='btn-add-to-cart' onClick={() => { navigate('/Login'); window.alert("Debes iniciar sesión para comprar productos online.")}}>
+							<i className="fa-solid fa-plus"></i>
+							Añadir al carrito
+						</button>
+					)}
 		</div>
 
 		</main>
