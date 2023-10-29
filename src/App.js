@@ -24,7 +24,7 @@ function App() {
   const [countCitas, setCountCitas] = useState(0);
   const [allCitas, setAllCitas] = useState([]);
   const [sortDir, setSortDir] = useState("none");
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState('Todo');
 
 
   const maxPrice = data.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
