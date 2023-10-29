@@ -1,15 +1,18 @@
+
 .sobre-nosotros {
-    color: black;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+	text-align: center; /* Alinea el texto al centro horizontal */
+	margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+	font-weight: 600;
+	color: #666;
+	font-size: 40px;
+	display: block;
 }
 
 .col-izq {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
     float: left;
     width: 45%;
     text-align: center;

@@ -17,13 +17,23 @@
 	display: flex;
 	font-size: 100%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+
 }
 
 .filtros {
 	display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	padding-right: 0%;
     margin-top: 0%;
+}
+
+.filter-menu-container {
+	position: absolute; /* Posición fija para mantenerlo en la parte superior */
+	top: 100px; /* Alineado en la parte superior */
+	left: 0; /* Alineado a la izquierda */
+	background-color: #666; /* Color de fondo del FilterMenu */
+	z-index: 1;
 }
 
 .slider{
@@ -31,8 +41,8 @@
 	margin: 0;
 	width: 240px;
 	height: 5px;
-	background: #709fdc;
-	border-radius: 5px;
+	background: #b1b3b5;
+	border-radius: 2%;
 	cursor: pointer;
 	
   }
@@ -51,7 +61,7 @@
 	padding-left: 15px;
 	border: none;
 	border-radius:20px;
-	background: #274684;
+	background: #283246;
   } 
 
   .minPrice{
@@ -64,14 +74,13 @@
 	padding-left: 15px;
 	border: none;
 	border-radius:20px;
-	background: #274684;
+	background: #283246;
   } 
 
 
 .labels {
 	display: flex;
 	flex-direction: row; /* Coloca los elementos en columnas */
-
     font-size: 18px;
 }
 
@@ -89,7 +98,7 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    background-color: #090058;
+    background-color: #283246;
     cursor: grab;
 }
 
@@ -116,6 +125,8 @@
 	gap: 1rem;
 	font-size: 100%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: bold;
+
 }
 
 .container-items {
@@ -160,10 +171,13 @@
 }
 
 .info-product button {
-	border: none;
+	border: 1px solid #283246; /* Agrega un borde de 2px de ancho y color negro */
+	border-radius: 10px; /* Ajusta el radio de borde según tu preferencia */
+	font-size: 22px;
+	font-weight: 900;
 	background: none;
-	background-color: #000;
-	color: #fff;
+	background-color: #5bdefa;
+	color: #0c0f0f;
 	padding: 15px 10px;
 	cursor: pointer;
 }
@@ -233,14 +247,14 @@
 .btn-add-product:hover{
 	background-color: #333333;
 	transform: scale(1.03);
-	border-radius: 0;
+	border-radius: 10px;
 }
   
   
 .btn-detail-product:hover{
 	background-color: #333333;
 	transform: scale(1.03);
-	border-radius: 0;
+	border-radius: 10px;
 }
 
 
@@ -258,5 +272,22 @@
 	padding-left: 15px;
 	border: none;
 	border-radius:20px;
-	background: #274684;
+	background: #283246;
 }
+
+
+.title-description-productos {
+	text-align: center; /* Alinea el texto al centro horizontal */
+	margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+  }
+
+.title-description-productos h4 {
+	font-weight: 600;
+	color: #666;
+	font-size: 40px;
+	display: inline;
+}
+
+.link-style {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }

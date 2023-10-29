@@ -1,8 +1,9 @@
 import { data } from '../data';
 import '../assets/ProductList.css';
 import {Link } from 'react-router-dom';
-
-
+import React, { useState } from 'react';
+import * as FaIcons from "react-icons/fa";
+import * as AiIcons from "react-icons/fa";
 
 
 export const ProductList = ({
@@ -23,8 +24,10 @@ export const ProductList = ({
 	const setTotal = props.setTotal;
 	const countProducts = props.countProducts;
 	const setCountProducts = props.setCountProducts;
-
+	const filter = props.filter;
+	const setFilter=props.setFilter;
 		
+
 
 	const onAddProduct = product => {
 
@@ -51,8 +54,16 @@ export const ProductList = ({
 	//const handleClick = () => history.push ('/product_detail'); //Redirección
 
 	return (
+		<div className="body">
 		<div className='container-items'>
-			{data.sort((a,b) => sortMethods[sortState].method(a.price, b.price))
+			{data.filter((product) => {
+				if (filter === 'Todo') {
+				return true;
+				}
+				return product.tipo === filter;
+			})
+			
+			.sort((a,b) => sortMethods[sortState].method(a.price, b.price))
 			.filter(product => product.price >= price[0] && product.price <= price[1])
 			.map(product => (
 				<div className='item' key={product.id}>
@@ -69,7 +80,7 @@ export const ProductList = ({
 								Añadir al carrito
 							</button>
 							
-							<Link to={`/detalle_producto/${product.id}`}>
+							<Link to={`/detalle_producto/${product.id}`} className="link-style">
 								<button className='btn-detail-product'>
 									Ir al detalle del producto
 								</button>
@@ -79,7 +90,7 @@ export const ProductList = ({
 					</div>
 				</div>
 			))}
-		</div>
+		</div></div>
 	);
 };
 

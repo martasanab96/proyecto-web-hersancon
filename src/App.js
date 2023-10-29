@@ -15,6 +15,8 @@ import { data } from './data';
 import Carrito from './components/Carrito';
 import DetalleProducto from './components/DetalleProducto';
 import Axios from 'axios'; // Importa Axios para hacer solicitudes HTTP
+import DetalleServicio from './components/DetalleServicio';
+import PedirPresupuesto from './pages/PedirPresupuesto';
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
   const [allCitas, setAllCitas] = useState([]);
   const [sortDir, setSortDir] = useState("none");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [filter, setFilter] = useState('Todo');
 
 
   const maxPrice = data.reduce((accumulator, current) => Math.max(current.price, accumulator),0);
@@ -85,7 +88,19 @@ function App() {
         <Routes>
           <Route path ="/" element={<Inicio />} />
           <Route path ="/Inicio" element={<Inicio />} />
-          <Route path ="/Servicios" element={<Servicios />} />
+          <Route path ="/PedirPresupuesto" element={<PedirPresupuesto />} />
+          <Route path ="/Servicios" element={<Servicios 
+            allCitas={allCitas}
+            setAllCitas={setAllCitas}
+            total={total}
+            setTotal={setTotal}
+            countCitas={countCitas}
+            setCountCitas={setCountCitas}
+            sortDir={sortDir}
+            setSortDir={setSortDir}
+            value={value}
+            setvalue={setValue}
+          />} />
           <Route path ="/Productos/*" element={<Productos 
             allProducts={allProducts}
             setAllProducts={setAllProducts}
@@ -97,6 +112,11 @@ function App() {
             setSortDir={setSortDir}
             value={value}
             setvalue={setValue}
+            filter={filter}
+            setFilter={setFilter}
+
+
+
           />} />
           <Route path ="/Contacto" element={<Contacto />} />
           <Route path="/detalle_producto/:productId" element={<DetalleProducto 
@@ -123,6 +143,21 @@ function App() {
             isAuthenticated={isAuthenticated}
           />} />
           
+          <Route path="/detalle_servicio/:servicioId" element={<DetalleServicio 
+          
+          allCitas={allCitas}
+            setAllCitas={setAllCitas}
+            countCitas={countCitas}
+            total={total}
+            setTotal={setTotal}
+            setCountCitas={setCountCitas}
+            sortDir={sortDir}
+            setSortDir={setSortDir}
+            value={value}
+            setvalue={setValue}
+
+        />} />
+
         </Routes>
       </div>
 	

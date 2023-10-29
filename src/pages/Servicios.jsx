@@ -1,9 +1,30 @@
 import React from 'react'
+import Dropdown from '../components/Dropdown';
+import RangeSliderFilter from '../components/RangeSliderFilter';
+import '../assets/ServicioList.css';
+import ServicioList from '../components/ServicioList';
 
-function Servicios() {
+const Servicios = (
+    props
+) => {
     
+    
+
     return (
-        <h1>Servicios</h1>
+
+        <>
+        <div className="title-description-servicios">
+            <h4>SERVICIOS</h4>
+            <i className="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <ServicioList
+				props = {props}
+			/>
+        
+
+        
+        </>
     )
 }
 
