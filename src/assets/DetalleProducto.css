@@ -72,6 +72,7 @@ main {
 	gap: 20px;
 	padding-bottom: 200px;
     padding-top: 100px;
+	
 	border-bottom: 1px solid #e4e4e4;
 }
 
@@ -95,15 +96,20 @@ main {
 }
 
 .btn-add-to-cart {
-	border: none;
-	background-color: #252525;
+
+
+	
+	border: 2px solid #283246; /* Agrega un borde de 2px de ancho y color negro */
+	border-radius: 10px; /* Ajusta el radio de borde según tu preferencia */
+	background-color: #5bdefa;
 	padding: 10px;
-	color: #f7f7f7;
+	color: #283246;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 5px;
-	font-weight: 700;
+	font-weight: 600;
+	font-size: 16px;
 	cursor: pointer;
 }
 

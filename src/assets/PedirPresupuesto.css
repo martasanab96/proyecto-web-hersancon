@@ -1,0 +1,88 @@
+
+.title-description-presupuesto {
+	text-align: center; /* Alinea el texto al centro horizontal */
+	margin-top: 20px; /* Ajusta el margen superior según tu preferencia */
+	font-weight: 500;
+	color: #666;
+	font-size: 40px;
+	display: block;
+}
+
+.et_pb_text_inner {
+    font-size: 30px;
+    text-align: center; /* Centra el texto horizontalmente */
+    max-width: 1000px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el texto horizontalmente */
+    padding: 20px; /* Agrega espacio interno alrededor del texto */
+}
+
+.et_pb_text_inner p {
+    font-size: 30px; /* Cambia el tamaño de fuente de los párrafos según tus preferencias */
+}
+
+/* Estilos para el formulario */
+.et_pb_contact_form {
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    padding: 20px; /* Añade espacio interno alrededor del formulario */
+    background-color: #f8f8f8; /* Cambia el color de fondo según tu preferencia */
+    border: 1px solid #ccc; /* Agrega un borde alrededor del formulario */
+    border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+.et_pb_contact_fields {
+    display: flex;
+    flex-wrap: wrap; /* Coloca los campos en una fila y ajusta automáticamente según el ancho */
+    gap: 10px; /* Agrega espacio entre los campos */
+}
+
+.et_pb_contact_field {
+    flex: 1; /* Permite que los campos ocupen todo el ancho disponible */
+}
+
+.et_contact_bottom_container {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-top: 20px; /* Añade espacio superior */
+}
+
+/* Estilos para los campos de entrada */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de envío */
+.et_pb_contact_submit {
+    background-color: #007bff; /* Cambia el color de fondo del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.et_pb_contact_submit:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse sobre el botón */
+}
+
+
+/* Estilos para el campo de mensaje */
+.et_pb_contact_field textarea {
+    height: 100px; /* Ajusta la altura según tus preferencias */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el mensaje */
+.message {
+    background-color: #4CAF50; /* Color de fondo verde (puedes ajustar este color) */
+    color: #fff; /* Color de texto blanco (puedes ajustar este color) */
+    padding: 10px; /* Añade un espacio interno alrededor del mensaje */
+    border-radius: 5px; /* Agrega bordes redondeados al mensaje */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 2px; /* Ajusta el margen superior según tu preferencia */
+  }

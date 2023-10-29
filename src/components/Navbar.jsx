@@ -43,13 +43,6 @@ const Navbar = ({
             />
 
 
-            
-            <Citas
-              allCitas={allCitas}
-              setAllCitas={setAllCitas}
-              countCitas={countCitas}
-              setCountCitas={setCountCitas}
-            />
         </nav>
     )
 }

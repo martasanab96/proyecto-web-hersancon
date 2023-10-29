@@ -44,7 +44,7 @@ const RangeSliderFilter =({props}) => {
             value={values}
             onChange={handleChange}
             min={0}
-            max={props.value[1]}
+            max={500}
           />
 
             

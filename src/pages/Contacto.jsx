@@ -6,6 +6,7 @@ function Contacto() {
     
     return (
         <div>
+            
             <h1 className='sobre-nosotros'>SOBRE NOSOTROS</h1>
 
             <div className='col-izq'>
